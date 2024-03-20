@@ -15,11 +15,11 @@ namespace Lab1Ex9
           a = Convert.ToInt32(Console.ReadLine());
           Console.WriteLine("Introduceti al doilea numar: "); 
           b= Convert.ToInt32(Console.ReadLine());
-          int aTransformatInB;
-          int bTransformatInA;
-          aTransformatInB = b;
-          bTransformatInA = a;
-          Console.WriteLine("Dupa interschimbare valoarea primului numar este " + aTransformatInB + " iar valoarea celui de-al doilea numar este " + bTransformatInA + " .");
+          int temporar;
+            temporar = a;
+            a = b;
+            b = temporar;
+          Console.WriteLine("Dupa interschimbare valoarea primului numar este " + a + " iar valoarea celui de-al doilea numar este " + b + " .");
         }
     }
 }
